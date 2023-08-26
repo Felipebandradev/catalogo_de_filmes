@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: monospace;
+    background-color: #bfd6eb;
+}
+
+h1{
+    padding: 0.5rem 1rem;
+}
+
+.logo img{
+  max-width: 100%;
+  width: 50px;   
+}
+
+header {
+    background-color: #dfeaf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 10vh;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+   justify-content: space-evenly; 
+}
+
+.menu li{ 
+    margin-right: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.menu a{
+    font-weight: bold;
+    color: #1b435c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus{
+    background-color: #7baed6;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+
+.destaque{
+    background-image: url(../img/fundo-index.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 90vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.destaque h2, .destaque p{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.destaque h2{
+    font-size: clamp(3rem,10vw, 6rem);
+    font-family: monospace,sans-serif,Arial, Helvetica ;
+    font-weight: 800;
+    animation: animadestaque 2s;
+}
+
+.destaque p, .destaque-genero p{
+    margin-bottom: 1.2rem;
+    font-size:clamp(1.1rem, 3vw, 2rem);
+    font-weight: bold;
+    animation: animadestaque 3s cubic-bezier(0.23, 1, 0.320, 1);
+    animation-delay: 1s;
+    animation-fill-mode: backwards; 
+}
+
+@keyframes animadestaque{
+   
+    from{
+        opacity: 0;
+        transform: translateY(-350px);
+    }
+   
+    to{
+        opacity: 1;
+    }
+}
+
+
+.destaque p a, .destaque-genero p a{
+    text-decoration: none;
+    background-color: #7baed6;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.destaque p a:hover, .destaque p a:focus, .destaque-genero p a:hover, .destaque-genero p a:focus{
+    color: #1b435c;
+    background-color: #dfeaf5;
+}
+
+.destaque-inserir-genero{
+    background-image: url(../img/fundo-inserir-genero.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 80vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center
+}
+
+.destaque-inserir-genero h2, .destaque-genero h2 {
+    font-size: clamp(2rem,10vw, 4rem);
+    font-family: monospace,sans-serif,Arial, Helvetica ;
+    font-weight: 800;
+    animation: animadestaque 2s;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.inserir-genero{
+    margin-top: 3rem;
+}
+
+.inserir-genero h2{
+    color: #1b435c;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label{
+    color: #1b435c;
+    font-size: 2rem;
+}
+
+button {
+  background-color: #7baed6;
+  border: none;
+  color: #1b435c;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover{
+    background-color: #172e3e;
+    color: #dfeaf5;
+}
+.voltar p a{
+   text-decoration: none; 
+   color:#1b435c;
+   background-color: #7baed6;
+   padding: 1rem;
+   border-radius: 15px;
+}
+
+.voltar p{
+    font-size: 1rem; 
+    padding: 2rem;
+}
+
+.voltar p a:hover{
+    background-color: #172e3e;
+    color: #7baed6;
+}
+
+td a{
+    color: #0068ef;
+    text-decoration: none;
+}
+td a:hover{
+    color: #2d33a9;
+    text-decoration: none;
+}
+
+
+tr:nth-child(odd){
+    color: #3b3cb4;
+    background-color:#c4bae7;
+}    
+
+tr:nth-child(even){ 
+    color: #353394;   
+    background-color: #e2dcf3;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+}
+
+tr, caption {
+    text-align: center;
+    font-size: 2rem;
+}
+
+thead tr th{
+    color: honeydew;
+    background-color: #3b3cb4;
+} 
+caption {
+    border-top-left-radius: 51px  ;
+    border-top-right-radius: 51px  ;
+    color:white;
+    background-color: #3329b1;
+}
+
+.destaque-genero{
+    background-image: url(../img/fundo-genero.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 50vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
