@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/08/2023 às 21:34
+-- Tempo de geração: 26/08/2023 às 21:44
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -55,7 +55,9 @@ INSERT INTO `generos` (`id`, `nome_genero`) VALUES
 (1, 'Comédia'),
 (2, 'Terror'),
 (3, 'Ação'),
-(4, 'Suspense');
+(4, 'Suspense'),
+(5, 'Drama'),
+(6, 'Romance');
 
 --
 -- Índices para tabelas despejadas
@@ -88,7 +90,7 @@ ALTER TABLE `filmes`
 -- AUTO_INCREMENT de tabela `generos`
 --
 ALTER TABLE `generos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Restrições para tabelas despejadas
